@@ -26,7 +26,7 @@ body {
 }
 .main {
   width: 90%;
-  max-width: 600px;
+  max-width: 550px;
   background: linear-gradient(var(--bgClWht1), var(--bgClWht2));
   margin: 20px auto;
   border-radius: 10px;

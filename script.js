@@ -25,9 +25,9 @@ button.addEventListener("click", function () {
 function toogleSwitch() {
   let image = document.getElementById("switch");
   if (image.src.match("Sun")) {
-    image.src = "Moon.svg";
+    image.src = "Media/Moon.svg";
   } else {
-    image.src = "Sun.svg";
+    image.src = "Media/Sun.svg";
   }
   document.getElementById("main").classList.toggle("darkModeClass");
 }

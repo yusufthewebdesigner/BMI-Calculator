@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main" id="main">
+      <div class="heading">
+        <h1>Calculate Your BMI</h1>
+        <img src="Moon.svg" alt="" id="switch" onclick="toogleSwitch()" />
+      </div>
+      <form action="">
+        <label for="">Height</label>
+        <input type="number" id="height" placeholder="In CM" />
+        <label for="">Weight</label>
+        <input type="number" id="weight" placeholder="In KG" />
+        <button id="button">Calculates</button>
+      </form>
+      <div class="result">
+        <div class="score" id="scoreBox">
+          <h5>Your BMI Score is</h5>
+          <h3 id="score">55</h3>
+        </div>
+        <div class="description">
+          <h3>BMI Weight Guide</h3>
+          <p class="p1">Under Weight = Less than 18.6</p>
+          <p class="p2">Normal Range = 18.6 and 24.9</p>
+          <p class="p3">Over Weight = More than 24.9</p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -23,11 +23,13 @@ button.addEventListener("click", function () {
 
 // For DarkMode
 function toogleSwitch() {
-  let image = document.getElementById("switch");
-  if (image.src.match("Sun")) {
-    image.src = "Media/Moon.svg";
+  let icon = document.getElementById("switch");
+  if (icon.classList.value.match("moon")) {
+    icon.classList.value = "fa-solid fa-sun";
+    icon.style.color = "#fff";
   } else {
-    image.src = "Media/Sun.svg";
+    icon.classList.value = "fa-solid fa-moon";
+    icon.style.color = "#000";
   }
   document.getElementById("main").classList.toggle("darkModeClass");
 }

@@ -5,10 +5,10 @@ let score = document.getElementById("score");
 let scoreBox = document.getElementById("scoreBox");
 
 button.addEventListener("click", function () {
-  let heightValue = parseFloat(height.value);
-  let heightInMeter = heightValue / 100;
+  let heightValue = +height.value;
+  let heightInMeter = (heightValue * 2.54) / 100;
   let weightValue = parseFloat(weight.value);
-  let BMI = weightValue / (heightInMeter * heightInMeter);
+  let BMI = weightValue / Math.pow(heightInMeter, 2);
   finalBMI = BMI.toFixed(2);
   score.innerText = finalBMI;
   scoreBox.style.display = "block";
